@@ -13,7 +13,7 @@ def imshow(img: torch.Tensor) -> None:
 
 
 def to_np_img(img: torch.Tensor) -> np.ndarray:
-    return np.transpose(img.numpy(), (1, 2, 0))
+    return np.transpose(img.numpy(), (1, 2, 0)).squeeze()
 
 
 def view_prediction(
